@@ -68,20 +68,20 @@
 // let nama = "", peran = "";
 
 //code disini gunakan console.log untuk outputnya
-// let nameplayer = ""; 
-// let playerposisi = 0;
+let nameplayer = prompt("Siapa nama kamu?"); 
+let playerposisi = prompt("Silahkan pilih anda ingin menjadi apa?");
 
-// if(nameplayer == '') {
-//     console.log("Anda harus memasukan nama anda")
-// } else if (playerposisi == 1) {
-//     console.log(`Halo ${nameplayer}, anda sekarang menjadi ksatria`);
-// } else if(playerposisi == 2) {
-//     console.log(`Halo ${nameplayer}, anda sekarang menjadi tabib`);
-// } else if(playerposisi == 3) {
-//     console.log(`Halo ${nameplayer}, anda sekarang menjadi penyihir`);
-// } else if(playerposisi == 0) {
-//     console.log(`Halo ${nameplayer}, anda harus memilih peran`);
-// }
+if(nameplayer == '') {
+    console.log("Anda harus memasukan nama anda")
+} else if (playerposisi == 1) {
+    console.log(`Halo ${nameplayer}, anda sekarang menjadi ksatria`);
+} else if(playerposisi == 2) {
+    console.log(`Halo ${nameplayer}, anda sekarang menjadi tabib`);
+} else if(playerposisi == 3) {
+    console.log(`Halo ${nameplayer}, anda sekarang menjadi penyihir`);
+} else if(playerposisi == 0) {
+    console.log(`Halo ${nameplayer}, anda harus memilih peran`);
+}
 
 // latihan soal 2
 // Kamu akan diberikan sebuah tanggal dalam tiga variabel, yaitu hari, bulan, dan tahun. Disini kamu diminta untuk membuat format tanggal. Misal tanggal yang diberikan adalah hari 1, bulan 5, dan tahun 1945. Maka, output yang harus kamu proses adalah menjadi 1 Mei 1945.
