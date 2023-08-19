@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Halam website</title>
+    <!-- menghubungkan css berbeda file -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- dasar -->
+    <h1>Selamat Datang di Website Saya</h1>
+    <p>Ini adalah contoh halaman web yang dibuat menggunakan HTML.</p>
+
+    <!-- elemen teks -->
+    <h1>Judul Utama</h1>
+    <p>
+      Ini adalah paragraf teks biasa. <strong>Teks tebal</strong> dan
+      <em>teks miring</em>.
+    </p>
+    <a href="https://www.contoh.com">Kunjungi Contoh.com</a>
+
+    <!-- image -->
+    <img src="gambar.jpg" alt="Deskripsi Gambar" width="300" height="200">
+
+    <!-- daftar  -->
+    <ul>
+        <li>Item pertama</li>
+        <li>Item kedua</li>
+        <li>Item ketiga</li>
+    </ul>
+    
+    <ol>
+        <li>Langkah pertama</li>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+    </ol>
+
+    <!-- formulir -->
+    <form action="/proses" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input class="button" type="submit" value="Kirim">
+    </form>
+  </body>
+</html>

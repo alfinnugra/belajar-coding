@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh DOM Manipulasi</title>
+</head>
+<body>
+  <h1 id="judul">Selamat Datang</h1>
+  <button id="tombol">Ubah Judul</button>
+
+  <script>
+    // Mengambil referensi elemen berdasarkan ID
+    const judulElemen = document.getElementById('judul');
+    const tombolElemen = document.getElementById('tombol');
+
+    // Menambahkan event listener untuk tombol
+    tombolElemen.addEventListener('click', function() {
+      judulElemen.textContent = 'Halo Dunia!';
+    });
+  </script>
+
+  <ul id="daftar">
+    <li>Apel</li>
+    <li>Pisang</li>
+    <li>Jeruk</li>
+  </ul>
+  <button id="tambah">Tambah Buah</button>
+  <button id="hapus">Hapus Buah Terakhir</button>
+
+  <script>
+    const daftarElemen = document.getElementById('daftar');
+    const tombolTambah = document.getElementById('tambah');
+    const tombolHapus = document.getElementById('hapus');
+
+    tombolTambah.addEventListener('click', function() {
+      const newBuah = document.createElement('li');
+      newBuah.textContent = 'Anggur';
+      daftarElemen.appendChild(newBuah);
+    });
+
+    tombolHapus.addEventListener('click', function() {
+      const lastBuah = daftarElemen.lastElementChild;
+      if (lastBuah) {
+        daftarElemen.removeChild(lastBuah);
+      }
+    });
+  </script>
+</body>
+</html>

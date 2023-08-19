@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title..." />
+        <span onclick="addTodo()" class="addBtn">Add</span>
+        <div class="search-section">
+          <input
+            type="search"
+            class="my-search"
+            id="search"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <span onclick="search()" class="addBtn" id="modalBtn">Search</span>
+        </div>
+      </div>
+    </header>
+
+    <ul id="myUL">
+      <li>Pay bills<span class="close">X</span></li>
+    </ul>
+
+    <script src="main.js"></script>
+  </body>
+</html>

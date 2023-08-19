@@ -1,0 +1,62 @@
+/* elemen selektor */
+p {
+  color: blue;
+}
+
+/* class selektor */
+.highlight {
+  background-color: yellow;
+}
+
+/* id selektor */
+#header {
+  font-size: 24px;
+}
+
+/* properti css */
+p {
+  color: green;
+}
+
+/* ukuran font */
+h1 {
+  font-size: 32px;
+}
+
+/* margin dan padding */
+.box {
+  margin: 10px;
+  padding: 20px;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  outline: white 1px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+blockquote::before {
+  content: "❝";
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  animation: move 2s ease infinite;
+}
